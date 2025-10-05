@@ -3,130 +3,159 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Joyania - A Christian Minecraft Realm</title>
-  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Roboto&display=swap" rel="stylesheet">
+  <title>Joyania - A Minecraft Adventure</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Roboto', sans-serif;
-      background: url('https://images.unsplash.com/photo-1607746882042-944635dfe10e') no-repeat center center fixed;
-      background-size: cover;
-      color: #fff;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #0f0f0f;
+      color: #eee;
     }
     header {
-      background-color: rgba(0, 0, 0, 0.7);
-      padding: 20px;
+      background: url('https://images.unsplash.com/photo-1607746882042-944635dfe10e') center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       text-align: center;
-      font-family: 'MedievalSharp', cursive;
+      color: white;
     }
     header h1 {
-      font-size: 3em;
+      font-family: 'Cinzel', serif;
+      font-size: 4em;
       margin: 0;
-      color: #ffd700;
+      text-shadow: 2px 2px 8px #000;
+    }
+    header p {
+      font-size: 1.2em;
+      max-width: 600px;
+      margin-top: 20px;
+      text-shadow: 1px 1px 5px #000;
+    }
+    .btn {
+      margin-top: 30px;
+      padding: 15px 30px;
+      background-color: #ffd700;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
     }
     nav {
-      background-color: rgba(0, 0, 0, 0.6);
-      display: flex;
-      justify-content: center;
-      padding: 10px;
+      background-color: #1a1a1a;
+      padding: 10px 0;
+      text-align: center;
     }
     nav a {
       color: #ffd700;
-      text-decoration: none;
       margin: 0 15px;
+      text-decoration: none;
       font-weight: bold;
     }
     nav a:hover {
       text-decoration: underline;
     }
-    .content {
-      padding: 40px;
-      background-color: rgba(0, 0, 0, 0.6);
-      max-width: 900px;
-      margin: auto;
-      border-radius: 10px;
-    }
     .section {
-      margin-bottom: 40px;
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
     }
-    h2 {
+    .section h2 {
+      font-family: 'Cinzel', serif;
+      font-size: 2.5em;
+      margin-bottom: 20px;
       color: #ffd700;
-      font-family: 'MedievalSharp', cursive;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+    .feature-box {
+      background-color: #1f1f1f;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #333;
+    }
+    .feature-box h3 {
+      color: #ffd700;
+      margin-top: 0;
     }
     footer {
+      background-color: #111;
       text-align: center;
-      padding: 20px;
-      background-color: rgba(0, 0, 0, 0.7);
+      padding: 30px;
       font-size: 0.9em;
-    }
-    .button {
-      background-color: #ffd700;
-      color: #000;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-    .button:hover {
-      background-color: #ffa500;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Welcome to Joyania</h1>
-    <p>A Medieval Christian Minecraft Server for Families</p>
+    <h1>Joyania</h1>
+    <p>A family-friendly Christian Minecraft server set in a rich medieval world of faith and adventure.</p>
+    <button class="btn" onclick="navigator.clipboard.writeText('play.joyania.org')">Copy Server IP</button>
   </header>
 
   <nav>
     <a href="#about">About</a>
-    <a href="#rules">Rules</a>
     <a href="#features">Features</a>
-    <a href="#join">Join Us</a>
+    <a href="#join">Join</a>
   </nav>
 
-  <div class="content">
-    <div class="section" id="about">
-      <h2>About Joyania</h2>
-      <p>Joyania is a peaceful, medieval-themed Minecraft server built on Christian values. We welcome players of all ages to explore, build, and adventure in a safe and uplifting environment. Whether you're constructing castles, farming in the countryside, or joining community worship events, Joyania is a place where faith and creativity thrive together.</p>
-    </div>
+  <div class="section" id="about">
+    <h2>Welcome to Joyania</h2>
+    <p>In the land of Joyania, light overcomes darkness. Built on Christian values and designed for families, Joyania offers a safe, engaging Minecraft experience where players can explore medieval towns, complete quests, and build lasting friendships. Whether you're a seasoned adventurer or a curious newcomer, Joyania is your sanctuary in the blocky world.</p>
+  </div>
 
-    <div class="section" id="rules">
-      <h2>Server Rules</h2>
-      <ul>
-        <li>Be respectful and kind to others.</li>
-        <li>No griefing, stealing, or trolling.</li>
-        <li>Keep language clean and family-friendly.</li>
-        <li>No inappropriate builds or behavior.</li>
-        <li>Honor God in your actions and words.</li>
-      </ul>
-    </div>
-
-    <div class="section" id="features">
-      <h2>Server Features</h2>
-      <ul>
-        <li>🛡️ Medieval-themed villages, castles, and quests</li>
-        <li>🙏 Weekly prayer gatherings and scripture sharing</li>
-        <li👨‍👩‍👧‍👦 Family-friendly community with active moderators</li>
-        <li>🎮 Custom plugins for immersive gameplay</li>
-        <li>🌿 Peaceful survival mode with optional PvE zones</li>
-        <li>🎨 Creative plots for building biblical stories</li>
-      </ul>
-    </div>
-
-    <div class="section" id="join">
-      <h2>Join Joyania</h2>
-      <p>Ready to embark on a journey of faith and adventure? Connect to our server and become part of the Joyania family!</p>
-      <p><strong>Server IP:</strong> play.joyania.org</p>
-      <p><strong>Version:</strong> Minecraft Java Edition 1.20+</p>
-      <button class="button" onclick="alert('Server IP copied to clipboard!')">Copy Server IP</button>
+  <div class="section" id="features">
+    <h2>Server Features</h2>
+    <div class="features">
+      <div class="feature-box">
+        <h3>🛡️ Medieval RPG World</h3>
+        <p>Explore handcrafted towns, dungeons, and lore-rich regions inspired by biblical themes and medieval legends.</p>
+      </div>
+      <div class="feature-box">
+        <h3>🙏 Faith-Based Community</h3>
+        <p>Join prayer circles, scripture quests, and events that celebrate Christian values in a respectful, inclusive way.</p>
+      </div>
+      <div class="feature-box">
+        <h3>👨‍👩‍👧‍👦 Family Friendly</h3>
+        <p>Safe chat, active moderation, and content filters ensure a wholesome experience for all ages.</p>
+      </div>
+      <div class="feature-box">
+        <h3>🎮 Custom Quests & Classes</h3>
+        <p>Choose your path — Knight, Healer, Builder, or Explorer — and complete quests that reward faith and courage.</p>
+      </div>
+      <div class="feature-box">
+        <h3>🌿 Peaceful Survival</h3>
+        <p>Gather, farm, and build in serene biomes with optional PvE zones and community projects.</p>
+      </div>
+      <div class="feature-box">
+        <h3>🎨 Creative Mode Plots</h3>
+        <p>Design your own biblical stories or fantasy builds in protected creative zones.</p>
+      </div>
     </div>
   </div>
 
+  <div class="section" id="join">
+    <h2>Join the Adventure</h2>
+    <p>Ready to begin your journey in Joyania? Connect now and become part of a growing community of faith-driven adventurers.</p>
+    <p><strong>Server IP:</strong> play.joyania.org</p>
+    <p><strong>Version:</strong> Minecraft Java Edition 1.20+</p>
+    <button class="btn" onclick="navigator.clipboard.writeText('play.joyania.org')">Copy Server IP</button>
+  </div>
+
   <footer>
-    <p>“Let your light shine before others, that they may see your good deeds and glorify your Father in heaven.” – Matthew 5:16</p>
-    <p>&copy; 2025 Joyania Minecraft Server. All rights reserved.</p>
+    <p>“The light shines in the darkness, and the darkness has not overcome it.” – John 1:5</p>
+    <p>&copy; 2025 Joyania Minecraft Server</p>
   </footer>
+
 </body>
 </html>
+
