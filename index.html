@@ -4,10 +4,125 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Joyania | A Medical Minecraft Server</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Trebuchet MS", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(180deg, #2e2419, #5a3a23);
+      color: #fff;
+      text-align: center;
+      min-height: 100vh;
+    }
+
+    /* Navigation bar */
+    header {
+      background-color: #3c2a1e;
+      padding: 15px 0;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    nav a {
+      color: #f0d68a;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+    }
+
+    /* Hero section */
+    .hero {
+      background: url('background.jpg') center/cover no-repeat;
+      padding: 80px 20px;
+    }
+
+    .hero img.logo {
+      width: 250px;
+      max-width: 80%;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      color: #f5d77b;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    }
+
+    .hero h1 span {
+      color: #e0b45c;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: 20px auto;
+      color: #f0e6c4;
+      font-size: 18px;
+      line-height: 1.6;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 15px 25px;
+      border-radius: 8px;
+    }
+
+    /* Button */
+    .btn {
+      display: inline-block;
+      background-color: #b0342c;
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 18px;
+      margin-top: 25px;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #d63f35;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 60px;
+      padding: 25px;
+      background: #2b1d14;
+      color: #c9b47a;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #e5cf91;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+
+  </style>
 </head>
 <body>
 
+  <!-- Navigation -->
   <header>
     <nav>
       <ul>
@@ -20,16 +135,21 @@
     </nav>
   </header>
 
+  <!-- Hero section -->
   <section class="hero">
     <img src="73FC72C4-B3CA-4E54-BEC1-8CA7B03E69D3-removebg-preview.png" alt="Joyania Logo" class="logo">
     <h1>Welcome to <span>JOYANIA</span></h1>
     <p>
       A Minecraft medical server where imagination runs free and hospital activities are brought to life.
-      Here, players can immerse themselves in a unique world centered around healthcare.
+      Here, players can immerse themselves in a unique world centered around healthcare and community.
     </p>
     <a href="#join" class="btn">Join Now</a>
   </section>
 
+  <!-- Footer -->
+  <footer>
+    © 2025 Joyania Server — Built by <a href="https://joyedforlife.xyz">Joyedforlife Studios</a>
+  </footer>
+
 </body>
 </html>
-
